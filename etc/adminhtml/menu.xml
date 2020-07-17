@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_CouponErrorMessage
+ * @link https://github.com/Goomento/CouponErrorMessage
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Goomento_CouponErrorMessage::maintext"
+             title="Coupon Error Message"
+             module="Goomento_CouponErrorMessage"
+             sortOrder="4"
+             parent="Goomento_Base::menu"
+             resource="Goomento_CouponErrorMessage::maintext"/>
+
+        <add id="Goomento_CouponErrorMessage::config"
+             title="Configuration"
+             module="Goomento_CouponErrorMessage"
+             sortOrder="1"
+             parent="Goomento_CouponErrorMessage::maintext"
+             action="adminhtml/system_config/edit/section/goomento_coupon_error_message"
+             resource="Goomento_CouponErrorMessage::config"
+             />
+    </menu>
+</config>

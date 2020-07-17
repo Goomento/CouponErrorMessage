@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_CouponErrorMessage
+ * @link https://github.com/Goomento/CouponErrorMessage
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="goomento_coupon_error_message" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+            <resource>Goomento_CouponErrorMessage::config</resource>
+            <label>Coupon Error Message</label>
+            <tab>goomento</tab>
+            <group id="general" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="active" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Active</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="allowed_show_all" translate="label comment" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Show All Message If Doesn't Match Any Conditions</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="on_error_message" translate="label comment" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Message When Error</label>
+                    <comment>This message will be displayed if it does not match any conditions.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

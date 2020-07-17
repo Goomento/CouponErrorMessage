@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_CouponErrorMessage
+ * @link https://github.com/Goomento/CouponErrorMessage
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Goomento_CouponErrorMessage" setup_version="1.0.0">
+        <sequence>
+            <module name="Goomento_Base"/>
+        </sequence>
+    </module>
+</config>

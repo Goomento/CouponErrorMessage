@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_CouponErrorMessage
+ * @link https://github.com/Goomento/CouponErrorMessage
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <goomento_coupon_error_message>
+            <general>
+                <active>0</active>
+                <allowed_show_all>0</allowed_show_all>
+                <on_error_message>We cannot apply the coupon code.</on_error_message>
+            </general>
+        </goomento_coupon_error_message>
+    </default>
+</config>

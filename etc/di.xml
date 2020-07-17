@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author @haihv433
+ * @copyright Copyright (c) 2020 Goomento (https://store.goomento.com)
+ * @package Goomento_CouponErrorMessage
+ * @link https://github.com/Goomento/CouponErrorMessage
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<!-- Create Logger -->
+    <virtualType name="CouponErrorMessageLogger" type="Goomento\Base\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">coupon_error_message</argument>
+        </arguments>
+    </virtualType>
+    <type name="Goomento\CouponErrorMessage\Helper\Logger">
+        <arguments>
+            <argument name="logger" xsi:type="object">CouponErrorMessageLogger</argument>
+        </arguments>
+    </type>
+    <preference for="Magento\Checkout\Controller\Cart\CouponPost"
+                type="Goomento\CouponErrorMessage\Controller\Cart\CouponPost"/>
+</config>
